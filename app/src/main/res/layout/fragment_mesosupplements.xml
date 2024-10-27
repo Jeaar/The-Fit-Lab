@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FF"
+    tools:context=".mesosupplements">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F6FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supplements for Mesomorph Body Type"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#1F316F"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These supplements are tailored for individuals with a mesomorph body type, helping to support muscle growth and enhance performance."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilizing a TDEE calculator will help you manage your calorie intake effectively. Mesomorphs typically benefit from a balanced diet rich in proteins, carbohydrates, and healthy fats."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/mesotdee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link to TDEE Calculator: TDEE Calculator"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="web"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openTDEECalculator"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creatine"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="#1F316F"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/creatine"
+                        android:contentDescription="Creatine Supplement"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Creatine is widely used to enhance performance, increase strength, and support muscle mass."
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For optimal results, take creatine before or after workouts as per the recommended dosage."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branched-Chain Amino Acids (BCAAs)"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="#1F316F"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/bcaa"
+                        android:contentDescription="BCAAs"
+                        android:scaleType="fitCenter"
+                        android:padding="20dp"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="BCAAs support muscle recovery and reduce muscle soreness post-exercise."
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consume BCAAs during workouts or between meals to aid in muscle recovery."
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

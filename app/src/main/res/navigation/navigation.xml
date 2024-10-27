@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/onboard">
+
+    <fragment
+        android:id="@+id/onboard"
+        android:name="com.example.thefitlab.Onboard"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_onboard" >
+        <action
+            android:id="@+id/action_onboard_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.thefitlab.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_ectomorph"
+            app:destination="@id/ectomorph" />
+        <action
+            android:id="@+id/action_homePage_to_guidelines"
+            app:destination="@id/guidelines" />
+        <action
+            android:id="@+id/action_homePage_to_mesomorph"
+            app:destination="@id/mesomorph" />
+        <action
+            android:id="@+id/action_homePage_to_endomorph"
+            app:destination="@id/endomorph" />
+    </fragment>
+    <fragment
+        android:id="@+id/ectomorph"
+        android:name="com.example.thefitlab.ectomorph"
+        android:label="fragment_ectomorph"
+        tools:layout="@layout/fragment_ectomorph" >
+        <action
+            android:id="@+id/action_ectomorph_to_workoutprogram"
+            app:destination="@id/workoutprogram" />
+        <action
+            android:id="@+id/action_ectomorph_to_supplements"
+            app:destination="@id/supplements" />
+        <action
+            android:id="@+id/action_ectomorph_to_recovery"
+            app:destination="@id/recovery" />
+        <action
+            android:id="@+id/action_ectomorph_to_mealplan"
+            app:destination="@id/mealplan" />
+    </fragment>
+    <fragment
+        android:id="@+id/guidelines"
+        android:name="com.example.thefitlab.guidelines"
+        android:label="fragment_guidelines"
+        tools:layout="@layout/fragment_guidelines" />
+    <fragment
+        android:id="@+id/legday"
+        android:name="com.example.thefitlab.legday"
+        android:label="fragment_legday"
+        tools:layout="@layout/fragment_legday" />
+    <fragment
+        android:id="@+id/pullday"
+        android:name="com.example.thefitlab.pullday"
+        android:label="fragment_pullday"
+        tools:layout="@layout/fragment_pullday" />
+    <fragment
+        android:id="@+id/pushday"
+        android:name="com.example.thefitlab.pushday"
+        android:label="fragment_pushday"
+        tools:layout="@layout/fragment_pushday" />
+    <fragment
+        android:id="@+id/recovery"
+        android:name="com.example.thefitlab.recovery"
+        android:label="fragment_recovery"
+        tools:layout="@layout/fragment_recovery" />
+    <fragment
+        android:id="@+id/supplements"
+        android:name="com.example.thefitlab.supplements"
+        android:label="fragment_supplements"
+        tools:layout="@layout/fragment_supplements" />
+    <fragment
+        android:id="@+id/workoutprogram"
+        android:name="com.example.thefitlab.workoutprogram"
+        android:label="fragment_workoutprogram"
+        tools:layout="@layout/fragment_workoutprogram" >
+        <action
+            android:id="@+id/action_workoutprogram_to_pushday"
+            app:destination="@id/pushday" />
+        <action
+            android:id="@+id/action_workoutprogram_to_pullday"
+            app:destination="@id/pullday" />
+        <action
+            android:id="@+id/action_workoutprogram_to_legday"
+            app:destination="@id/legday" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealplan"
+        android:name="com.example.thefitlab.mealplan"
+        android:label="fragment_mealplan"
+        tools:layout="@layout/fragment_mealplan" />
+    <fragment
+        android:id="@+id/endomorph"
+        android:name="com.example.thefitlab.endomorph"
+        android:label="fragment_endomorph"
+        tools:layout="@layout/fragment_endomorph" >
+        <action
+            android:id="@+id/action_endomorph_to_workoutprogram"
+            app:destination="@id/workoutprogram" />
+        <action
+            android:id="@+id/action_endomorph_to_endomealplan"
+            app:destination="@id/endomealplan" />
+        <action
+            android:id="@+id/action_endomorph_to_endosupplements"
+            app:destination="@id/endosupplements" />
+        <action
+            android:id="@+id/action_endomorph_to_recovery"
+            app:destination="@id/recovery" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesomorph"
+        android:name="com.example.thefitlab.mesomorph"
+        android:label="fragment_mesomorph"
+        tools:layout="@layout/fragment_mesomorph" >
+        <action
+            android:id="@+id/action_mesomorph_to_workoutprogram"
+            app:destination="@id/workoutprogram" />
+        <action
+            android:id="@+id/action_mesomorph_to_mesomealplan"
+            app:destination="@id/mesomealplan" />
+        <action
+            android:id="@+id/action_mesomorph_to_mesosupplements"
+            app:destination="@id/mesosupplements" />
+        <action
+            android:id="@+id/action_mesomorph_to_recovery"
+            app:destination="@id/recovery" />
+    </fragment>
+    <fragment
+        android:id="@+id/endomealplan"
+        android:name="com.example.thefitlab.endomealplan"
+        android:label="fragment_endomealplan"
+        tools:layout="@layout/fragment_endomealplan" />
+    <fragment
+        android:id="@+id/endosupplements"
+        android:name="com.example.thefitlab.endosupplements"
+        android:label="fragment_endosupplements"
+        tools:layout="@layout/fragment_endosupplements" />
+    <fragment
+        android:id="@+id/mesomealplan"
+        android:name="com.example.thefitlab.mesomealplan"
+        android:label="fragment_mesomealplan"
+        tools:layout="@layout/fragment_mesomealplan" />
+    <fragment
+        android:id="@+id/mesosupplements"
+        android:name="com.example.thefitlab.mesosupplements"
+        android:label="fragment_mesosupplements"
+        tools:layout="@layout/fragment_mesosupplements" />
+    <fragment
+        android:id="@+id/splashSceen"
+        android:name="com.example.thefitlab.SplashSceen"
+        android:label="fragment_splash_sceen"
+        tools:layout="@layout/fragment_splash_sceen" >
+        <action
+            android:id="@+id/action_splashSceen_to_onboard"
+            app:destination="@id/onboard" />
+    </fragment>
+</navigation>

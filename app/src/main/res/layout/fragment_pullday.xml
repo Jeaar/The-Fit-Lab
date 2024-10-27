@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F6FF"
+    tools:context=".pullday">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pull Day Workouts"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center"
+                />
+
+            <!-- Back Exercises -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back Exercises"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/pullups"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pull-Ups"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/pullups_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/3YvfRx31xDE?si=DnHnIgzuIP3lGHRJ"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openPullUpsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/bentoverrows"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bent-Over Rows"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/bent_over_rows_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/3YvfRx31xDE?si=DnHnIgzuIP3lGHRJ"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openBentOverRowsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/seatedrows"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seated Rows"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/seated_rows_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/UCXxvVItLoM?si=QwGARg4gnUoBipLC"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openSeatedRowsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Bicep Exercises -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bicep Exercises"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/bicepscurls"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bicep Curls"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/bicep_curls_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/ykJmrZ5v0Oo?si=Y4WxvZ5ao435gfZk"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openBicepCurlsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/concentrationcurls"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Concentration Curls"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/concentration_curls_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtube.com/shorts/cHxRJdSVIkA?si=7z001tfts0gLcwqn"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openConcentrationCurlsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/hammercurls"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hammer Curls"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/hammer_curls_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtube.com/shorts/OPhgvwKBOwI?si=SlcdhpYRD7-3dvb6"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openHammerCurlsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Rear Deltoid Exercises -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rear Deltoid Exercises"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/reardelt"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rear Delt Fly"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/rear_delt_fly_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/nlkF7_2O_Lw?si=1O-53WzrgnnYfB1D"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openRearDeltFlyLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/reardelt"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reverse Fly"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/reverse_fly_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/JoCRRZ3zRtI?si=2maQt-cGOTfB3T56"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openReverseFlyLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="4dp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/reardelt"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Face Pulls"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:id="@+id/face_pulls_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://youtu.be/0Po47vvj9g4?si=xILVaSbK3hBcyKlt"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:clickable="true"
+                            android:onClick="openFacePullsLink"
+                            android:textSize="14sp"
+                            android:paddingTop="4dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

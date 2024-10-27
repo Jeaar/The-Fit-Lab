@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FF"
+    tools:context=".endosupplements">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F6FF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/endotdee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supplements for Endomorph"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#1F316F"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These supplements are designed to help individuals with an endomorph body type looking to manage weight and build lean muscle mass."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To track your calories per day, you can use a TDEE calculator. This will help you determine your daily calorie intake. For endomorphs, consider a slight calorie deficit to achieve weight loss while preserving muscle mass."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link to TDEE Calculator: tdeecalculator.net"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="web"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein Powder"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="#1F316F"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/whey"
+                        android:contentDescription="Protein Powder"
+                        android:scaleType="fitCenter"
+                        android:padding="20dp"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Protein powder is a popular supplement for individuals looking to increase their protein intake, aiding in muscle recovery and growth."
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To use protein powder, mix the recommended serving with water, milk, or in smoothies and consume it post-workout or as needed to meet your protein goals."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post-Workout Meals"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="#1F316F"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/postworkout"
+                        android:contentDescription="Post-Workout Supplements"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Post-workout meals help to speed up recovery after intense workouts."
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For best results, eat a meal within 30 minutes after exercising to maximize recovery and muscle growth."
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
